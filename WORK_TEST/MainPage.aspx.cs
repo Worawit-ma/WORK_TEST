@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WORK_TEST.Repositories;
 
 namespace WORK_TEST
 {
@@ -11,7 +12,12 @@ namespace WORK_TEST
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            FruitRepository fruitRepository = new FruitRepository();
 
+            var data = fruitRepository.getFruits();
+
+            GridView1.DataSource = data;
+            GridView1.DataBind();
         }
     }
 }
