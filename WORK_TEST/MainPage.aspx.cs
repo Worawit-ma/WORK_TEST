@@ -19,5 +19,10 @@ namespace WORK_TEST
             GridView1.DataSource = data;
             GridView1.DataBind();
         }
+
+        protected void btnNewEntry_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Addfruit.aspx");
+        }
     }
 }

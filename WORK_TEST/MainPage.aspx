@@ -15,9 +15,8 @@
 
     </asp:GridView>
 
-
-
-
+    <asp:Button ID="Button1" runat="server" Text="Addfruit" OnClick="btnNewEntry_Click"/>
+    
 
 
 
